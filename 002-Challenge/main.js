@@ -10,7 +10,15 @@
 class BankAccount {
   // Constructor
   constructor(owner, initialBalance) {
-    // Your code here
+    this._owner = owner;
+    this._initialBalance = initialBalance;
+  }
+
+  get owner() {
+    return this._owner;
+  }
+  get initialBalance() {
+    return this._initialBalance;
   }
 
   // Method to deposit money
