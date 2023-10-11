@@ -23,7 +23,7 @@ class BankAccount {
 
   // Method to deposit money
   deposit(amount) {
-    // Your code here
+    return amount + this._initialBalance
   }
 
   // Method to withdraw money
